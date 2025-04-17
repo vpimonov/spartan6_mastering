@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o /home/silver/xilinx_projects/spartan6_mastering/step_001//step_001 -s 2048 -u 0000 /home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.runs/impl_1/blink.bit -spi 
+
+PROM /home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.prm map: Thu Apr 17 18:05:24 2025
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          2048K
+PROM start    0000:0000
+PROM end      001f:ffff
+PROM checksum 13b786e6
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    000c:3ab5     Apr 17 17:59:54 2025 /home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.runs/impl_1/blink.bit

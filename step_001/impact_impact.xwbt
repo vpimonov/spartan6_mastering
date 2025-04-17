@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/silver/xilinx_projects/spartan6_mastering/step_001/impact.xsl
+OUTFILE=/home/silver/xilinx_projects/spartan6_mastering/step_001/impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=/home/silver/xilinx_projects/spartan6_mastering/step_001
+LICENSE=iMPACT
+USER_INFO=iMPACT

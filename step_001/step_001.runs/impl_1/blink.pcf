@@ -1,0 +1,11 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Apr 17 18:12:39 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "CLK_25M_i" LOCATE = SITE "J6" LEVEL 1;
+COMP "LED_o[0]" LOCATE = SITE "T8" LEVEL 1;
+COMP "LED_o[1]" LOCATE = SITE "R9" LEVEL 1;
+COMP "LED_o[2]" LOCATE = SITE "T9" LEVEL 1;
+SCHEMATIC END;
+

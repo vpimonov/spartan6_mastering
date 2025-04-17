@@ -1,0 +1,338 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: blink.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "blink.prj"
+
+---- Target Parameters
+Target Device                      : xc6slx25ftg256-2
+Output File Name                   : "blink.ngc"
+
+---- Source Options
+Top Module Name                    : blink
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 1
+Netlist Hierarchy                  : rebuilt
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/blink.v" into library work
+Parsing module <blink>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <blink>.
+WARNING:HDLCompiler:413 - "/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/blink.v" Line 45: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/blink.v" Line 50: Result of 29-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/blink.v" Line 52: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/blink.v" Line 53: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/blink.v" Line 54: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/blink.v" Line 59: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/blink.v" Line 60: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/blink.v" Line 61: Result of 8-bit expression is truncated to fit in 7-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <blink>.
+    Related source file is "/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/blink.v".
+    Found 28-bit register for signal <counter>.
+    Found 3-bit register for signal <LED_o>.
+    Found 16-bit register for signal <decimator>.
+    Found 16-bit adder for signal <decimator[15]_GND_1_o_add_1_OUT> created at line 45.
+    Found 28-bit adder for signal <counter[27]_GND_1_o_add_3_OUT> created at line 50.
+    Found 7-bit comparator greater for signal <r[6]_c[6]_LessThan_5_o> created at line 52
+    Found 7-bit comparator greater for signal <g[6]_c[6]_LessThan_7_o> created at line 53
+    Found 7-bit comparator greater for signal <b[6]_c[6]_LessThan_9_o> created at line 54
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  47 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+Unit <blink> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 16-bit adder                                          : 1
+ 28-bit adder                                          : 1
+# Registers                                            : 3
+ 16-bit register                                       : 1
+ 28-bit register                                       : 1
+ 3-bit register                                        : 1
+# Comparators                                          : 3
+ 7-bit comparator greater                              : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <blink>.
+The following registers are absorbed into counter <decimator>: 1 register on signal <decimator>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <blink> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 16-bit up counter                                     : 1
+ 28-bit up counter                                     : 1
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+# Comparators                                          : 3
+ 7-bit comparator greater                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <counter_27> of sequential type is unconnected in block <blink>.
+
+Optimizing unit <blink> ...
+WARNING:Xst:1293 - FF/Latch <decimator_10> has a constant value of 0 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <decimator_11> has a constant value of 0 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <decimator_12> has a constant value of 0 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <decimator_13> has a constant value of 0 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <decimator_14> has a constant value of 0 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <decimator_15> has a constant value of 0 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block blink, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 40
+ Flip-Flops                                            : 40
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : blink.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 163
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 35
+#      LUT2                        : 11
+#      LUT3                        : 30
+#      LUT4                        : 1
+#      LUT5                        : 3
+#      LUT6                        : 7
+#      MUXCY                       : 35
+#      VCC                         : 1
+#      XORCY                       : 37
+# FlipFlops/Latches                : 40
+#      FD                          : 10
+#      FDE                         : 30
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 3
+#      OBUF                        : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx25ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              40  out of  30064     0%  
+ Number of Slice LUTs:                   89  out of  15032     0%  
+    Number used as Logic:                89  out of  15032     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     89
+   Number with an unused Flip Flop:      49  out of     89    55%  
+   Number with an unused LUT:             0  out of     89     0%  
+   Number of fully used LUT-FF pairs:    40  out of     89    44%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                           4
+ Number of bonded IOBs:                   4  out of    186     2%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK_25M_i                          | BUFGP                  | 40    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.291ns (Maximum Frequency: 233.046MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.162ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK_25M_i'
+  Clock period: 4.291ns (frequency: 233.046MHz)
+  Total number of paths / destination ports: 896 / 70
+-------------------------------------------------------------------------
+Delay:               4.291ns (Levels of Logic = 3)
+  Source:            decimator_5 (FF)
+  Destination:       decimator_0 (FF)
+  Source Clock:      CLK_25M_i rising
+  Destination Clock: CLK_25M_i rising
+
+  Data Path: decimator_5 to decimator_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.525   1.196  decimator_5 (decimator_5)
+     LUT5:I0->O            2   0.254   0.726  GND_1_o_GND_1_o_equal_3_o<15>_SW0 (N4)
+     LUT6:I5->O           10   0.254   1.008  GND_1_o_GND_1_o_equal_3_o<15> (GND_1_o_GND_1_o_equal_3_o)
+     LUT2:I1->O            1   0.254   0.000  decimator_0_rstpot (decimator_0_rstpot)
+     FD:D                      0.074          decimator_0
+    ----------------------------------------
+    Total                      4.291ns (1.361ns logic, 2.930ns route)
+                                       (31.7% logic, 68.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_25M_i'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            rgb_2 (FF)
+  Destination:       LED_o<2> (PAD)
+  Source Clock:      CLK_25M_i rising
+
+  Data Path: rgb_2 to LED_o<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.525   0.725  rgb_2 (rgb_2)
+     OBUF:I->O                 2.912          LED_o_2_OBUF (LED_o<2>)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK_25M_i
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_25M_i      |    4.291|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.64 secs
+ 
+--> 
+
+
+Total memory usage is 372188 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
