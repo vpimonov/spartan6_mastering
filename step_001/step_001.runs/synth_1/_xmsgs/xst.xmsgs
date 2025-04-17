@@ -5,49 +5,19 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/blink.v" Line 45: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"D:/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/meander.v" Line 40: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/blink.v" Line 50: Result of <arg fmt="%d" index="1">29</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">28</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"D:/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/meander.v" Line 40: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/blink.v" Line 52: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"D:/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/meander.v" Line 40: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/blink.v" Line 53: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"D:/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/meander.v" Line 40: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/blink.v" Line 54: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/blink.v" Line 59: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">7</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/blink.v" Line 60: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">7</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/blink.v" Line 61: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">7</arg>-bit target.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">counter_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">blink</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">decimator_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">blink</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">decimator_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">blink</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">decimator_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">blink</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">decimator_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">blink</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">decimator_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">blink</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">decimator_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">blink</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"D:/xilinx_projects/spartan6_mastering/step_001/step_001.srcs/sources_1/new/meander.v" Line 40: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
 </msg>
 
 </messages>

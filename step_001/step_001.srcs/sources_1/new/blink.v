@@ -25,40 +25,18 @@ module blink(
     output [2:0] LED_o
     );
     
-    reg [2:0] rgb;
-    reg [27:0] counter;
-    reg [15:0] decimator;
+    wire clk;
+    wire fast_m;
     
-    wire [6:0] r;
-    wire [6:0] g;
-    wire [6:0] b;
-    wire [6:0] c;
-    
-initial begin
-    rgb <=  0;
-    counter <= 0;
-    decimator <= 0;
-end
+    wire [2:0] slow;
 
-always @(posedge CLK_25M_i)
-begin
-  decimator <= decimator + 1;
-  
-  if (decimator == 1000)
-  begin
-  decimator <=  0;
-  counter <= counter + 1;
+    meander # (.WIDTH (9), .T_LO (100), .T_HI (400)) m_clk (.clk (CLK_25M_i), .out(clk));
+    meander # (.WIDTH (9), .T_LO (150), .T_HI (150)) m_fast (.clk (clk), .out(fast_m));
+    meander # (.WIDTH (9), .T_LO (151), .T_HI (151)) m_r (.clk (clk), .out(slow[2]));
+    meander # (.WIDTH (9), .T_LO (152), .T_HI (152)) m_g (.clk (clk), .out(slow[1]));
+    meander # (.WIDTH (9), .T_LO (153), .T_HI (153)) m_b (.clk (clk), .out(slow[0]));
 
-  rgb[2] <= (c>r) ? 1 : 0;
-  rgb[1] <= (c>g) ? 1 : 0;
-  rgb[0] <= (c>b) ? 1 : 0;
-  end
-end
 
-assign LED_o = rgb;
-assign r = counter[27:20];
-assign g = counter[19:12];
-assign b = counter[11:4];
-assign c = counter[3:0];
+assign LED_o = {fast_m,fast_m,fast_m} ^ slow | {clk,clk,clk};
 
 endmodule

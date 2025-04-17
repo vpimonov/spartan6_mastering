@@ -2,10 +2,10 @@
 # Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 SOFTWARE_VERSION P.20131013
-DATE             4/17/2025 - 18: 5
-SOURCE          /home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.mcs
+DATE            04/17/2025 - 12:33
+SOURCE          \\vboxsvr\d_drive\xilinx_projects\spartan6_mastering\step_001\step_001.mcs
 DEVICE          2048K
 DATA_WIDTH      1
 FILL_DATA       0xFF
-SIGNATURE       0x13B786E6
-START_ADDRESS   0x00000000 END_ADDRESS 0x000C3AB5 DIRECTION_UP   "/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.runs/impl_1/blink.bit" 6slx25ftg256
+SIGNATURE       0x13B8D543
+START_ADDRESS   0x00000000 END_ADDRESS 0x000C3AB5 DIRECTION_UP   "D:/xilinx_projects/spartan6_mastering/step_001/step_001.runs/impl_1/blink.bit" 6slx25ftg256

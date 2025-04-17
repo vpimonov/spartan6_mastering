@@ -1,0 +1,8 @@
+Storage Target: SPI Flash Single FPGA
+16M
+FF
+step_001
+D:\xilinx_projects\spartan6_mastering\step_001\
+
+MCS
+No

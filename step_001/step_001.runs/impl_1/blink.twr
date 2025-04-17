@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (lin64)
+Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -o blink.twr
--v 30 -l 30 blink_routed.ncd blink.pcf
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -o
+blink.twr -v 30 -l 30 blink_routed.ncd blink.pcf
 
 Design file:              blink_routed.ncd
 Physical constraint file: blink.pcf
@@ -36,9 +36,9 @@ Clock CLK_25M_i to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-LED_o[0]    |        11.071(R)|      SLOW  |         5.071(R)|      FAST  |CLK_25M_i_BUFGP   |   0.000|
-LED_o[1]    |        11.040(R)|      SLOW  |         5.040(R)|      FAST  |CLK_25M_i_BUFGP   |   0.000|
-LED_o[2]    |        11.298(R)|      SLOW  |         5.187(R)|      FAST  |CLK_25M_i_BUFGP   |   0.000|
+LED_o[0]    |        12.677(R)|      SLOW  |         5.772(R)|      FAST  |CLK_25M_i_BUFGP   |   0.000|
+LED_o[1]    |        12.594(R)|      SLOW  |         5.742(R)|      FAST  |CLK_25M_i_BUFGP   |   0.000|
+LED_o[2]    |        12.389(R)|      SLOW  |         5.672(R)|      FAST  |CLK_25M_i_BUFGP   |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK_25M_i
@@ -46,18 +46,18 @@ Clock to Setup on destination clock CLK_25M_i
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK_25M_i      |    3.423|         |         |         |
+CLK_25M_i      |    3.281|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Apr 17 18:12:46 2025 
+Analysis completed Thu Apr 17 12:30:32 2025 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 395 MB
+Peak Memory Usage: 235 MB
 
 
 

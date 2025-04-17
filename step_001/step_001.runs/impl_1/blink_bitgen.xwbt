@@ -1,8 +1,8 @@
 INTSTYLE=pa
-INFILE=/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.runs/impl_1/blink_routed.ncd
-OUTFILE=/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.runs/impl_1/blink.bit
+INFILE=D:\xilinx_projects\spartan6_mastering\step_001\step_001.runs\impl_1\blink_routed.ncd
+OUTFILE=D:\xilinx_projects\spartan6_mastering\step_001\step_001.runs\impl_1\blink.bit
 FAMILY=Spartan6
 PART=xc6slx25-2ftg256
-WORKINGDIR=/home/silver/xilinx_projects/spartan6_mastering/step_001/step_001.runs/impl_1
+WORKINGDIR=D:\xilinx_projects\spartan6_mastering\step_001\step_001.runs\impl_1
 LICENSE=WebPack
 USER_INFO=__0_0_0
