@@ -1,0 +1,80 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> 
+Reading design: example_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "example_top.prj"
+
+---- Target Parameters
+Target Device                      : xc6slx25ftg256-2
+Output File Name                   : "example_top.ngc"
+
+---- Source Options
+Top Module Name                    : example_top
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 1
+Netlist Hierarchy                  : rebuilt
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/silver/xilinx_projects/spartan6_mastering/step_002/step_002.srcs/sources_1/new/example_top.v" into library work
+Parsing module <example_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <example_top>.
+
+Elaborating module <IBUFG>.
+WARNING:HDLCompiler:1127 - "/home/silver/xilinx_projects/spartan6_mastering/step_002/step_002.srcs/sources_1/new/example_top.v" Line 52: Assignment to tick ignored, since the identifier is never used
+ERROR:HDLCompiler:1654 - "/home/silver/xilinx_projects/spartan6_mastering/step_002/step_002.srcs/sources_1/new/example_top.v" Line 74: Instantiating <U_TX> from unknown module <uart_tx>
+Module example_top remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "/home/silver/xilinx_projects/spartan6_mastering/step_002/step_002.srcs/sources_1/new/example_top.v" Line 23: Empty module <example_top> remains a black box.
+--> 
+
+
+Total memory usage is 295344 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

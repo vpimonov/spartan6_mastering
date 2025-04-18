@@ -1,0 +1,9 @@
+set -loop_iteration_limit 1000
+run
+-ifn example_top.prj
+-top example_top
+-p xc6slx25ftg256-2
+-ofn example_top.ngc
+-opt_mode speed
+-opt_level 1
+-netlist_hierarchy rebuilt
